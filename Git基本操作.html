@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 1. 获取Git仓库的两种方式
+        1. 将尚未进行版本控制的本地目录转换为Git仓库
+            1. 在项目目录中，鼠标右击 'Git Bush'
+            2. 执行 git init命令将当前的目录转化为Git仓库
+            git init命令会创建一个名为.git的隐藏目录，这个.git目录就是当前项目的Git仓库，
+            里面包含了初始的必要文件，这些文件是Git仓库的必要组成部分。
+
+        2. 从其他服务区中克隆已存在的Git仓库 
+        以上两种方式都能够在自己的电脑上得到一个可用的Git仓库
+    
+        Git操作的终极结果:让工作区中的文件都处于“未修改”的状态。即所有文件被安全保持在仓库中
+        查看终端目录下的文件处于哪种状态下
+        $ git status [-s] 是否缩写状态报告
+
+        添加要跟踪/已修改的文件：此时再运行git status 命令，会看到 index.html文件在Changes to be committed这行的下面，说明已被跟踪，并处于暂存状态:
+        $ git add filename [-s] 修改过的、没有放入暂存区的文件前面有红色的M标记。
+        $ git add . 将当前目录下的所有未跟踪文件添加至暂存区
+
+        可以执行git commit命令进行提交,其中-m选项后面是本次的提交消息，用来对提交的内容做进一步的描述:
+        $ git commit -m "提交成功" 
+
+        撤销对文件的修改指的是:把对工作区中对应文件的修改，还原成Git仓库中所保存的版本。
+        操作的结果:所有的修改会丢失，且无法恢复!危险性比较高，请慎重操作!
+        $ git checkout -- 文件名
+
+        从暂存区移除对应的文件
+        $ git reset HEAD 文件名
+        -->
+</body>
+
+</html>
